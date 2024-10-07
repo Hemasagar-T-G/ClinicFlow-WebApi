@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pygHIo7tfFhIDJWdzaK5nQZLT1RFzBHuV3MZrlZvRv8=",
+  "Source": "ClinicFlow-WebApi",
+  "BasePath": "_content/ClinicFlow-WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
