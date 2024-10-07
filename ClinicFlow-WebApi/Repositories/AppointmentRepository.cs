@@ -41,6 +41,15 @@ namespace ClinicFlow_WebApi.Repositories
             }
         }
 
+        public async Task<Appointment> GetLatestAppointmentByPatientId(string patientId)
+        {
+            return await appointmentCollection
+                .Find(a => a.PatientId == patientId)
+                .SortByDescending(a => a.AppointmentDate)
+                .FirstOrDefaultAsync();
+        }
+
+
         public async Task<Appointment> GetAppointmentById(string id)
         {
             try
@@ -78,7 +87,7 @@ namespace ClinicFlow_WebApi.Repositories
             }
         }
 
-        public async Task<bool> DeleteAppointment(string id)
+        public async Task<bool> DeleteAppointmentById(string id)
         {
             try
             {

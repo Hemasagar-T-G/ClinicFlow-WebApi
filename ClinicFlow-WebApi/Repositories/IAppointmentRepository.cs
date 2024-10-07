@@ -8,13 +8,15 @@ namespace ClinicFlow_WebApi.Repositories
 
         Task<List<Appointment>> GetAllAppointmentList();
 
+        Task<Appointment> GetLatestAppointmentByPatientId(string patientId);
+
         Task<Appointment> GetAppointmentById(string id);
 
         Task<List<Appointment>> GetAppointmentsByDoctorId(string doctorId);
 
         Task<bool> UpdateAppointment(Appointment appointment);
 
-        Task<bool> DeleteAppointment(string id);
+        Task<bool> DeleteAppointmentById(string id);
     }
 
 }

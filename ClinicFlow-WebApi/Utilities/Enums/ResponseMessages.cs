@@ -12,5 +12,6 @@
         Delete_Failed = 8,
         Validation_Failed = 9,
         Not_Found = 10,
+        Receipt_Generated_Successfully = 11,
     }
 }
