@@ -20,8 +20,3 @@ ClinicFlow-WebApi is a RESTful API developed using .NET and MongoDB for managing
 ### Prerequisites
 - .NET Core SDK 6.0 or later
 - MongoDB installed and running
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/ClinicFlow-WebApi.git
